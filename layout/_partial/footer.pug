@@ -1,9 +1,20 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
-  a(href=url_for('.'), rel='nofollow')= config.title + '.'
-  |  Powered by
-  a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
-  a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
-  |  by
-  a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+#footer
+  span(style={'margin-right': '10px'})= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
+    a(href=url_for('.'), rel='nofollow')= config.title
+
   if theme.icp
     a(rel='nofollow', target='_blank', href='https://beian.miit.gov.cn/')=  theme.icp
+
+  <br>
+
+  div.github-badge
+    a(rel='nofollow', target='_blank', href='https://hexo.io')
+      span.badge-subject Powered by
+      span.badge-value.bg-blue Hexo
+
+  div(style="display:inline-block") &nbsp;
+
+  div.github-badge
+    a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')
+      span.badge-subject Theme
+      span.badge-value.bg-green Maupassant
