@@ -47,6 +47,10 @@ waline: ## See: https://waline.js.org/
   wordLimit: 500 ## Limit the number of words in comments, 0 means no limit.
   requiredMeta: ['nick','mail'] ## Required user information, e.g. ['nick','mail','link']
   count: 5 ## The number comments displayed in the recent_comments widget, default is 10.
+  locale: {
+    placeholder: '欢迎评论',
+    sofa: '来发评论吧~'
+  }
 utterances: ## See: https://utteranc.es
   enable: false ## If you want to use Utterances comment system, please set the value to true.
   repo: ## The repository utterances will connect to, e.g. tufu9441/comments

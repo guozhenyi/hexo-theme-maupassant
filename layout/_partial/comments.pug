@@ -155,6 +155,7 @@ if theme.waline.enable == true
       pageSize: '#{theme.waline.pageSize}',
       wordLimit: '#{theme.waline.wordLimit}',
       requiredMeta,
+      locale: !{JSON.stringify(theme.waline.locale || {})},
       emoji: [
         '//unpkg.com/@waline/emojis@1.2.0/weibo',
         '//unpkg.com/@waline/emojis@1.2.0/qq',
