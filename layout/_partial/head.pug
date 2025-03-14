@@ -6,16 +6,16 @@ head
   meta(content='telephone=no', name='format-detection')
   meta(name='description', content=config.description)
   block title
-  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
-  link(rel='stylesheet', type='text/css', href='https://unpkg.com/normalize.css@8.0.1/normalize.css')
-  link(rel='stylesheet', type='text/css', href='https://unpkg.com/purecss@3.0.0/build/pure-min.css')
-  link(rel='stylesheet', type='text/css', href='https://unpkg.com/purecss@3.0.0/build/grids-responsive-min.css')
-  link(rel='stylesheet', href='https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css')
-  script(type='text/javascript', src='https://unpkg.com/jquery@3.7.1/dist/jquery.min.js')
   link(rel='icon', mask='',sizes='any', href=url_for('favicon.ico'))
   link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
   link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
   link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
+  //- link(rel='stylesheet', type='text/css', href='https://unpkg.com/normalize.css@8.0.1/normalize.css')
+  link(rel='stylesheet', type='text/css', href='https://unpkg.com/purecss@3.0.0/build/pure-min.css')
+  link(rel='stylesheet', type='text/css', href='https://unpkg.com/purecss@3.0.0/build/grids-responsive-min.css')
+  link(rel='stylesheet', href='https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css')
+  script(type='text/javascript', src='https://unpkg.com/jquery@3.7.1/dist/jquery.min.js')
   if config.feed
     link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
   if theme.google_analytics
